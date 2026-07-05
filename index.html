@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hashir Studio Ultra V5</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0a0a0a;
+color:white;
+}
+
+/* NAVBAR */
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 30px;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+color:#d4af37;
+font-size:22px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+url("studio-background.png");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+color:#d4af37;
+animation:fadeIn 2s ease;
+text-shadow:2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.hero p{
+margin-top:10px;
+opacity:0.9;
+}
+
+.btn{
+margin-top:20px;
+padding:12px 25px;
+background:#d4af37;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* SECTIONS */
+section{
+padding:80px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+color:#d4af37;
+margin-bottom:30px;
+font-size:32px;
+}
+
+/* ABOUT */
+.about{
+text-align:center;
+opacity:0.9;
+line-height:1.6;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.hero h1{
+font-size:40px;
+}
+nav{
+flex-direction:column;
+gap:10px;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Hashir Studio</div>
+<div>
+<a href="#about">About</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+<h1>Designs That Build Brands</h1>
+<p>Premium Graphic Design • Branding • Social Media</p>
+<a href="#portfolio" class="btn">View Portfolio</a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<p class="about">
+I am a creative graphic designer specializing in logos, posters, branding, and social media content.
+I help businesses build strong visual identity using modern design and AI tools.
+</p>
+</section>
+
+
+<!-- SERVICES -->
+<section id="services">
+<h2>Services</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;text-align:center">
+
+<div style="background:#141414;padding:20px;border-radius:12px;transition:0.3s">
+<h3 style="color:#d4af37">Logo Design</h3>
+<p>Modern and clean logo designs for brands.</p>
+</div>
+
+<div style="background:#141414;padding:20px;border-radius:12px">
+<h3 style="color:#d4af37">Poster Design</h3>
+<p>Eye-catching posters for promotion.</p>
+</div>
+
+<div style="background:#141414;padding:20px;border-radius:12px">
+<h3 style="color:#d4af37">Brand Identity</h3>
+<p>Complete visual branding for businesses.</p>
+</div>
+
+<div style="background:#141414;padding:20px;border-radius:12px">
+<h3 style="color:#d4af37">Social Media</h3>
+<p>Instagram & Facebook post designs.</p>
+</div>
+
+</div>
+</section>
+
+<!-- PORTFOLIO UPGRADE -->
+<section id="portfolio">
+<h2 style="text-align:center;color:#d4af37;margin-bottom:30px;">My Projects</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;">
+
+<!-- CARD 1 -->
+<div style="background:#141414;border-radius:16px;overflow:hidden;text-align:center;">
+<img src="burger-blaze.jpg"
+style="width:100%;height:200px;object-fit:cover;border-radius:18px;">
+<h3 style="color:#d4af37;padding:10px;">Burger Blaze</h3>
+<p style="padding-bottom:15px;opacity:0.8;">Restaurant branding design</p>
+</div>
+
+<!-- CARD 2 -->
+<div style="background:#141414;border-radius:16px;overflow:hidden;text-align:center;">
+<img src="brew-haven.jpg" style="width:100%;height:200px;object-fit:cover;">
+<h3 style="color:#d4af37;padding:10px;">Brew Haven</h3>
+<p style="padding-bottom:15px;opacity:0.8;">Coffee shop branding</p>
+</div>
+
+<!-- CARD 3 -->
+<div style="background:#141414;border-radius:16px;overflow:hidden;text-align:center;">
+<img src="urbanx.jpg" style="width:100%;height:200px;object-fit:cover;">
+<h3 style="color:#d4af37;padding:10px;">UrbanX Clothing</h3>
+<p style="padding-bottom:15px;opacity:0.8;">Streetwear fashion branding</p>
+</div>
+
+<!-- CARD 4 -->
+<div style="background:#141414;border-radius:16px;overflow:hidden;text-align:center;">
+<img src="titan-fitness.jpg" style="width:100%;height:200px;object-fit:cover;">
+<h3 style="color:#d4af37;padding:10px;">Titan Fitness</h3>
+<p style="padding-bottom:15px;opacity:0.8;">Gym branding design</p>
+</div>
+
+</div>
+</section>
+<!-- SKILLS -->
+<section>
+<h2>Skills</h2>
+
+<div style="max-width:700px;margin:auto">
+
+<p>Graphic Design</p>
+<div style="background:#333;height:10px;border-radius:20px">
+<div style="width:90%;height:10px;background:#d4af37;border-radius:20px"></div>
+</div>
+
+<br>
+
+<p>Branding</p>
+<div style="background:#333;height:10px;border-radius:20px">
+<div style="width:85%;height:10px;background:#d4af37;border-radius:20px"></div>
+</div>
+
+<br>
+
+<p>AI Tools</p>
+<div style="background:#333;height:10px;border-radius:20px">
+<div style="width:80%;height:10px;background:#d4af37;border-radius:20px"></div>
+</div>
+
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+<h2>Testimonials</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;text-align:center">
+
+<div style="background:#141414;padding:20px;border-radius:12px">
+<p>"Amazing design work! Very professional."</p>
+<h4 style="color:#d4af37">- Client 1</h4>
+</div>
+
+<div style="background:#141414;padding:20px;border-radius:12px">
+<p>"Fast delivery and great creativity."</p>
+<h4 style="color:#d4af37">- Client 2</h4>
+</div>
+
+<div style="background:#141414;padding:20px;border-radius:12px">
+<p>"Best designer for branding projects."</p>
+<h4 style="color:#d4af37">- Client 3</h4>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT FINAL -->
+<section id="contact">
+<h2>Contact Me</h2>
+
+<div style="text-align:center">
+
+<p>Email: HashirShaikh1903@gmail.com</p>
+<p>WhatsApp: +91 7506491260</p>
+
+<br>
+
+<a href="mailto:HashirShaikh1903@gmail.com?subject=Project%20Inquiry&body=Hello%20Hashir,%20I%20would%20like%20to%20work%20with%20you."
+style="
+display:inline-block;
+background:#EA4335;
+color:white;
+padding:16px 40px;
+border-radius:50px;
+text-decoration:none;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 8px 20px rgba(234,67,53,.4);
+transition:.3s;">
+📧 Email Me
+</a>
+
+<!-- FOOTER -->
+<footer style="text-align:center;padding:20px;background:#111;color:#aaa">
+© 2026 Hashir Studio | Designed with passion
+</footer>
